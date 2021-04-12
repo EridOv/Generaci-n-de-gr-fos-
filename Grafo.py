@@ -53,7 +53,7 @@ def gilbert(n,p, dirigido):# n es numero de nodos, p es la probabilidad
         if dirigido==False:writer.writerow(['Source', 'Target'])
         writer.writerows(aristas) 
     
-def geografico(n,r, dirigido= boolean):
+def geografico(n,r, dirigido= boolean): # N es el numero de nodos y r es la distancia a la que deben estar los nodos para generar arista
     nuevoN(n)
     Grafo.aristas= aristasGeografico(n,r,dirigido)
     aristas=list(Grafo.aristas)    
@@ -63,7 +63,7 @@ def geografico(n,r, dirigido= boolean):
         if dirigido==False:writer.writerow(['Source', 'Target'])
         writer.writerows(aristas) 
 
-def Barabasi(n,g, dirigido=boolean):
+def Barabasi(n,g, dirigido=boolean): # n es el numero de nodos y g es el maximo numero de aristas por nodo 
     nuevoN(n)
     Grafo.aristas=aristaBarbasi(n,g)            
     aristas=list(Grafo.aristas)    
